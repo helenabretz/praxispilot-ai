@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PraxisPilot AI – MVZ Horst</title>
+<title>PraxisPilot AI</title>
 <style>
 :root{--b:#0b66e4;--g:#0f9f6e;--r:#d64545;--o:#e58a00;--bg:#f6f9fc;--ink:#142033;--m:#69788e;--line:#e2eaf4}
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}
 header{background:#fff;border-bottom:1px solid var(--line);padding:18px 20px;position:sticky;top:0;z-index:2}
 .logo{display:flex;align-items:center;gap:12px}.mark{background:var(--b);color:#fff;width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-weight:900}
-small{color:var(--m)}main{padding:18px;max-width:1200px;margin:auto}.hero{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin:14px 0 20px}
+small{color:var(--m)}main{padding:18px;max-width:1180px;margin:auto}.hero{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin:14px 0 20px}
 h1{font-size:clamp(28px,5vw,44px);margin:4px 0}.pill{display:inline-block;background:#e9f8f2;color:var(--g);padding:8px 12px;border-radius:999px;font-weight:800}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card,.panel{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 14px 35px rgba(20,32,51,.06);padding:20px}
 .label{color:var(--m);font-weight:800}.value{font-size:34px;font-weight:950;margin:12px 0}.warn{color:var(--o)}.bad{color:var(--r)}.good{color:var(--g)}
@@ -23,24 +23,76 @@ footer{color:var(--m);padding:20px;text-align:center}
 </style>
 </head>
 <body>
-<header><div class="logo"><div class="mark">PP</div><div><b>PraxisPilot AI</b><br><small>MVZ Orthopädie Horst · Klinikum Itzehoe</small></div></div></header>
+<header>
+  <div class="logo">
+    <div class="mark">PP</div>
+    <div><b>PraxisPilot AI</b><br><small>Management-Dashboard für orthopädische Praxen & MVZs</small></div>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div><small>Praxissteuerung / Tagesübersicht</small><h1>Guten Morgen, MVZ Horst</h1><p>KI-gestützte Kennzahlen für Auslastung, Wartezeiten und wirtschaftliches Potenzial.</p></div><div class="pill">● Praxis läuft stabil</div></section>
+<section class="hero">
+  <div>
+    <small>Praxissteuerung / Tagesübersicht</small>
+    <h1>Willkommen zurück 👋</h1>
+    <p>Erkennen Sie täglich, wo Ihre Praxis Zeit und Umsatz verliert.</p>
+  </div>
+  <div class="pill">● Praxis läuft stabil</div>
+</section>
+
 <section class="grid">
-<div class="card"><div class="label">Umsatzverlust</div><div class="value warn">204 €</div><small>durch No-Shows & späte Absagen</small></div>
-<div class="card"><div class="label">Patienten</div><div class="value good">9/12</div><small>behandelt / geplant</small></div>
-<div class="card"><div class="label">No-Shows</div><div class="value bad">3</div><small>inkl. kurzfristiger Absagen</small></div>
-<div class="card"><div class="label">Ø Wartezeit</div><div class="value">25 Min.</div><small>Ziel: unter 20 Minuten</small></div>
+  <div class="card"><div class="label">Umsatzpotenzial verloren</div><div class="value warn">620 €</div><small>durch No-Shows & Terminlücken</small></div>
+  <div class="card"><div class="label">Patienten heute</div><div class="value good">114</div><small>geplante Patientenkontakte</small></div>
+  <div class="card"><div class="label">No-Shows</div><div class="value bad">5</div><small>inkl. kurzfristiger Absagen</small></div>
+  <div class="card"><div class="label">Ø Wartezeit</div><div class="value">18 Min.</div><small>Ziel: unter 20 Minuten</small></div>
 </section>
+
 <section class="panel ai">
-<div><h2>🤖 KI-Tagesanalyse</h2><p>Heute liegt das größte Optimierungspotenzial zwischen <b>10:00 und 12:00 Uhr</b>. Erstvorstellungen und Akuttermine überziehen regelmäßig. Bei besserer Nachbesetzung ausgefallener Kontrolltermine ergibt sich ein erwarteter Mehrumsatz von <b>480 € pro Tag</b>.</p></div>
-<div><h3>Heute würde ich ändern</h3><div class="action">✓ Kontrolltermine ab 15 Uhr bündeln</div><div class="action">✓ 2 Akut-Slots nachmittags reservieren</div><div class="action">✓ Ausfallrisiko 24h vorher bestätigen</div></div>
+  <div>
+    <h2>🤖 KI-Tagesanalyse</h2>
+    <p>Heute liegt das größte Optimierungspotenzial zwischen <b>09:30 und 11:00 Uhr</b>. Erstvorstellungen und Akuttermine führen dort zu längeren Wartezeiten. Durch bessere Nachbesetzung freier Slots ergibt sich ein geschätztes Potenzial von <b>480 € pro Tag</b>.</p>
+  </div>
+  <div>
+    <h3>Heute würde ich ändern</h3>
+    <div class="action">✓ Kontrolltermine ab 15 Uhr bündeln</div>
+    <div class="action">✓ Akuttermine stärker nachmittags planen</div>
+    <div class="action">✓ Ausfallrisiko 24h vorher bestätigen</div>
+  </div>
 </section>
+
 <section class="twocol">
-<div class="panel"><h2>Wartezeit diese Woche</h2><div class="chart"><div class="col" style="height:60%"><b>24</b></div><div class="col" style="height:45%"><b>18</b></div><div class="col" style="height:78%"><b>31</b></div><div class="col" style="height:55%"><b>22</b></div><div class="col" style="height:70%"><b>28</b></div></div><small>Minuten: Mo–Fr</small></div>
-<div class="panel"><h2>Geräteauslastung</h2><p>Röntgen</p><div class="bar"><span style="width:88%"></span></div><p>Sonographie</p><div class="bar"><span style="width:72%"></span></div><p>Stoßwelle</p><div class="bar"><span style="width:64%"></span></div></div>
+  <div class="panel">
+    <h2>Wartezeit diese Woche</h2>
+    <div class="chart">
+      <div class="col" style="height:60%"><b>24</b></div>
+      <div class="col" style="height:45%"><b>18</b></div>
+      <div class="col" style="height:78%"><b>31</b></div>
+      <div class="col" style="height:55%"><b>22</b></div>
+      <div class="col" style="height:70%"><b>28</b></div>
+    </div>
+    <small>Minuten: Mo–Fr</small>
+  </div>
+
+  <div class="panel">
+    <h2>Geräteauslastung</h2>
+    <p>Röntgen</p><div class="bar"><span style="width:88%"></span></div>
+    <p>Sonographie</p><div class="bar"><span style="width:72%"></span></div>
+    <p>Stoßwelle</p><div class="bar"><span style="width:64%"></span></div>
+  </div>
 </section>
-<section class="panel" style="margin-top:14px"><h2>Ärztevergleich</h2><table><tr><th>Arzt</th><th>Patienten</th><th>Wartezeit</th><th>Auslastung</th><th>Status</th></tr><tr><td><b>Dr. Hansen</b></td><td>4</td><td>18 Min.</td><td>92%</td><td><span class="good">OK</span></td></tr><tr><td><b>Dr. Meier</b></td><td>4</td><td>26 Min.</td><td>88%</td><td><span class="warn">Prüfen</span></td></tr><tr><td><b>Dr. Schulte</b></td><td>4</td><td>32 Min.</td><td>94%</td><td><span class="bad">Engpass</span></td></tr></table></section>
-</main><footer>PraxisPilot AI MVP · Demo ohne echte Patientendaten</footer>
+
+<section class="panel" style="margin-top:14px">
+  <h2>Ärztevergleich</h2>
+  <table>
+    <tr><th>Arzt</th><th>Patienten</th><th>Wartezeit</th><th>Auslastung</th><th>Status</th></tr>
+    <tr><td><b>Arzt 1</b></td><td>31</td><td>16 Min.</td><td>94%</td><td><span class="good">OK</span></td></tr>
+    <tr><td><b>Arzt 2</b></td><td>27</td><td>24 Min.</td><td>89%</td><td><span class="warn">Prüfen</span></td></tr>
+    <tr><td><b>Arzt 3</b></td><td>34</td><td>19 Min.</td><td>97%</td><td><span class="good">OK</span></td></tr>
+    <tr><td><b>Arzt 4</b></td><td>22</td><td>33 Min.</td><td>83%</td><td><span class="bad">Engpass</span></td></tr>
+  </table>
+</section>
+</main>
+
+<footer>PraxisPilot AI MVP · Demo ohne echte Patientendaten</footer>
 </body>
 </html>
